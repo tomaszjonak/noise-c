@@ -17,3 +17,6 @@ missing
 test-driver
 .dirstamp
 ylwrap
+.idea/
+cmake-build-debug/
+*.log
