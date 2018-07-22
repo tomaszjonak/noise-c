@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.6)
-project(noise-c C)
-
-
+project(
+    noise-c
+    LANGUAGES C
+    VERSION 0.0.1
+)
 
 #if (${})
 #    set(ED448_DEFAULT_ARCH arch_x86_64)
