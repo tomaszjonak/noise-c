@@ -3,6 +3,7 @@ add_library(noiseprotocol STATIC
     dhstate.c
     errors.c
     handshakestate.c
+    hashstate.c
     internal.c
     names.c
     patterns.c
@@ -55,8 +56,11 @@ add_library(noiseprotocol STATIC
     ${CMAKE_SOURCE_DIR}/src/crypto/ed25519/ed25519.c
 )
 
-target_include_directories(noiseprotocol PRIVATE
+target_include_directories(noiseprotocol PUBLIC
     ${CMAKE_SOURCE_DIR}/include
+)
+
+target_include_directories(noiseprotocol PRIVATE
     ${CMAKE_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_SOURCE_DIR}/src/crypto/goldilocks/src/include

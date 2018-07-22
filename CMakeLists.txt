@@ -1,9 +1,11 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.12)
 project(
     noise-c
     LANGUAGES C
-    VERSION 0.0.1
+#    VERSION 0.0.1
 )
+
+add_compile_options(-Wall)
 
 #if (${})
 #    set(ED448_DEFAULT_ARCH arch_x86_64)
