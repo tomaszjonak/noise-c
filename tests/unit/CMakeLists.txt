@@ -14,7 +14,6 @@ add_executable(test-noise
 )
 
 target_include_directories(test-noise PRIVATE
-    ${CMAKE_SOURCE_DIR}/include
     ${CMAKE_SOURCE_DIR}/src
 )
 

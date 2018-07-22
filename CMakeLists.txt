@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.8.12)
+
 project(
     noise-c
     LANGUAGES C
-#    VERSION 0.0.1
 )
 
 add_compile_options(-Wall)
