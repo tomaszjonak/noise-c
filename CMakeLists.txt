@@ -18,6 +18,7 @@ set(GOLDILOCKS_ARCH "${ED448_DEFAULT_ARCH}")
 add_subdirectory(include)
 add_subdirectory(src)
 add_subdirectory(examples)
+add_subdirectory(tools)
 
 enable_testing()
 add_subdirectory(tests)
