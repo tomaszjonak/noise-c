@@ -1,8 +1,11 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.0.0)
+cmake_policy(SET CMP0048 NEW)
+cmake_policy(SET CMP0057 NEW)
 
 project(
     noise-c
     LANGUAGES C
+    VERSION 0.0.1
 )
 
 add_compile_options(-Wall)
@@ -19,6 +22,7 @@ add_subdirectory(include)
 add_subdirectory(src)
 add_subdirectory(examples)
 add_subdirectory(tools)
+add_subdirectory(doc)
 
 enable_testing()
 add_subdirectory(tests)
